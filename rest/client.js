@@ -9,13 +9,31 @@ const listBooks = () => {
     });
 }
 const insertBook = (id, title, author) => {
-    
+    request.post("http://localhost:3000/books/insert")
+    .send({id, title, author})
+    .then(res => {
+        console.log(res.body);
+    });
 }
 const getBook = (id) => {
-    
+    request.get("http://localhost:3000/books/get")
+    .query("id="+String(id))
+    .then(res => {
+        console.log(res.body);
+    })
+    .catch(err => {
+        console.log(err.message);
+    });
 }
 const deleteBook = (id) => {
-
+    request.delete("http://localhost:3000/books/delete")
+    .query("id=" + String(id))
+    .then(res => {
+        console.log(res.body);
+    })
+    .catch(err => {
+        console.log(err.message);
+    });
 }
 
 // no need to implement watch for REST API
