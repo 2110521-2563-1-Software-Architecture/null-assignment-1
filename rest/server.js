@@ -3,6 +3,11 @@ const logger = require("morgan");
 const bodyParser = require("body-parser");
 const { NotImplemented } = require("http-errors");
 
+// swagger docs stuff
+const swaggerUI = require("swagger-ui-express");
+const YAMLjs = require("yamljs");
+const spec = YAMLjs.load("spec.yaml");
+
 const app = express();
 
 app.use(logger("dev"));
@@ -13,6 +18,12 @@ const books = [
     { id: 123, title: "A Tale of Two Cities", author: "Charles Dickens" },
 ];
 
+
+// setup swagger
+app.use("/docs", swaggerUI.serve, swaggerUI.setup(spec));
+
+
+// APIs
 app.get("/books/list", (req, res) => {
     res.send({ books });
 });
