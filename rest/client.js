@@ -20,6 +20,9 @@ const getBook = (id) => {
     .query("id="+String(id))
     .then(res => {
         console.log(res.body);
+    })
+    .catch(err => {
+        console.log(err.message);
     });
 }
 const deleteBook = (id) => {
@@ -27,6 +30,9 @@ const deleteBook = (id) => {
     .query("id=" + String(id))
     .then(res => {
         console.log(res.body);
+    })
+    .catch(err => {
+        console.log(err.message);
     });
 }
 
