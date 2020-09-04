@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "events": "^3.2.0",
+    "grpc": "^1.24.3"
+  }
+}
