@@ -25,8 +25,9 @@ server.addService(booksProto.books.BookService.service, {
         callback(null, {});
     },
     get: ({request}, callback) => {
+        const id = parseInt(request.id);
         for (let book of books)
-            if (book.id == request.id) 
+            if (book.id === id) 
                 return callback(null, book);
         callback({
             code: grpc.status.NOT_FOUND,
