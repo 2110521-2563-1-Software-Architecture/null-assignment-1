@@ -25,7 +25,7 @@ app.use("/docs", swaggerUI.serve, swaggerUI.setup(spec));
 
 // APIs
 app.get("/books/list", (req, res) => {
-    res.send({ books });
+    res.send(books);
 });
 
 app.post("/books/insert", (req, res) => {
