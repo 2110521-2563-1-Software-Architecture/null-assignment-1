@@ -35,7 +35,7 @@ app.get("/books/get", (req, res) => {
 });
 
 app.delete("/books/delete", (req, res) => {
-    const id = parseInt(req.body.id)
+    const id = parseInt(req.query.id)
     for (let i=0; i<books.length; i++) {
         if (books[i].id === id) {
             books.splice(i, 1);
