@@ -1,16 +1,6 @@
 const grpc = require("grpc");
-const protoLoader = require("@grpc/proto-loader");
-const { LITTLE_ENDIAN } = require("bytebuffer");
-const { list } = require("tar");
-
-// const defn = protoLoader.loadSync(
-//     "books.proto",
-// );
 
 const booksProto = grpc.load("books.proto"); // .<filename>
-// const books = booksProto.books;
-
-// console.log(books);
 
 const client = new booksProto.books.BookService('127.0.0.1:50051',
     grpc.credentials.createInsecure());
