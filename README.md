@@ -1,12 +1,12 @@
 # Assignment #1: gRPC and REST API Implementation
 
 # 1. Screenshots of Swagger for your APIs in 2.
-![](screenshot1.jpg?raw=true)
-![](screenshot2.jpg?raw=true)
-![](screenshot3.jpg?raw=true)
-![](screenshot4.jpg?raw=true)
-![](screenshot5.jpg?raw=true)
-![](screenshot6.jpg?raw=true)
+![](asset/screenshot1.jpg?raw=true)
+![](asset/screenshot2.jpg?raw=true)
+![](asset/screenshot3.jpg?raw=true)
+![](asset/screenshot4.jpg?raw=true)
+![](asset/screenshot5.jpg?raw=true)
+![](asset/screenshot6.jpg?raw=true)
 
 # 2. Source codes
 - [REST API and client](https://github.com/2110521-2563-1-Software-Architecture/null-assignment-1/tree/master/rest-v2)
