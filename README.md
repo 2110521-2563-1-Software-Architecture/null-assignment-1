@@ -37,7 +37,7 @@
 | watchBooks | watchBooks();                  | -                              |
 
 # 7. Draw a component diagram representing the book services with and without interfaces.
-![](componentDiagram.jpg?raw=true)
+![](asset/componentDiagram.jpg?raw=true)
 # Team Members
 - `6031323521`	โรจนณัฐ	คุณากรโอภาส
 - `6030352521`	ปพน	ชัยศรีสุขอำพร
