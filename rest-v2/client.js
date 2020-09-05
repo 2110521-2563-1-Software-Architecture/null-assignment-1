@@ -55,7 +55,12 @@ else if (command === "get")
 else if (command === "delete")
     deleteBook(args[0]);
 else {
-    console.log("Wrong command");
+    console.log(`Usage:
+node client.js list                            List all books
+node client.js insert <id> <title> <author>    Insert a book
+node client.js get <id>                        Get a book by its ID
+node client.js delete <id>                     Delete a book by its ID
+node client.js watch                           Watch for inserted books`);
 }
 // else if (command === "watch")
     // watchBooks()
