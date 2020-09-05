@@ -42,3 +42,7 @@ APIs:
  - `GET /get?id=123`: get a book by ID
  - `DELETE /delete?id=123`: delete a book by ID
  - `POST /insert`: insert a book 
+
+## Client
+
+API client is avaiable in `client.js`, run it with no arguments to see help
